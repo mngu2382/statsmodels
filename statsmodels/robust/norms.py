@@ -658,8 +658,8 @@ class Hampel(RobustNorm):
         s = np.sign(z)
         z = np.fabs(z)
         v = s * (t1 * z +
-                 t2 * a*s +
-                 t3 * a*s * (c - z) / (c - b))
+                 t2 * a +
+                 t3 * a * (c - z) / (c - b))
         return v
 
     def weights(self, z):
